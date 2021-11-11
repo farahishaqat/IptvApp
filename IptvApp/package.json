@@ -1,0 +1,73 @@
+{
+  "name": "iptvapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "clean": "cd android && ./gradlew clean && cd ../",
+    "bundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "build": "cd android && ./gradlew assembleDebug && cd ../",
+    "buildApk": "npm run clean && npm run bundle && npm run build"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@react-native-async-storage/async-storage": "^1.15.9",
+    "@react-native-clipboard/clipboard": "^1.9.0",
+    "@react-native-masked-view/masked-view": "^0.2.6",
+    "@react-navigation/bottom-tabs": "^6.0.9",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
+    "@reduxjs/toolkit": "^1.6.2",
+    "axios": "^0.24.0",
+    "axios-hooks": "^3.0.0",
+    "i18next": "^21.4.2",
+    "react": "17.0.2",
+    "react-i18next": "^11.14.1",
+    "react-native": "^0.66.1",
+    "react-native-async-storage": "0.0.1",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-image-crop-picker": "^0.37.1",
+    "react-native-otp": "^1.0.0",
+    "react-native-otp-auto-fill": "^0.1.7",
+    "react-native-otp-form": "^1.0.2",
+    "react-native-otp-inputs": "^7.1.1",
+    "react-native-permissions": "^3.1.0",
+    "react-native-restart": "0.0.22",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.9.0",
+    "react-native-splash-screen": "^3.2.0",
+    "react-redux": "^7.2.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/react-native": "^0.65.0",
+    "@types/react-test-renderer": "^17.0.1",
+    "babel-jest": "^27.3.1",
+    "eslint": "^7.14.0",
+    "jest": "^27.3.1",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2",
+    "typescript": "^3.8.3"
+  },
+  "resolutions": {
+    "@types/react": "^17"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

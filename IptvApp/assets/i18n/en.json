@@ -1,0 +1,21 @@
+{
+    "general": {
+        "language": "العربية"
+    },
+    "login": {
+        "loginTitle": "Login",
+        "forgetPassword": "Forgot your password?"
+    },
+    "home": {
+        "greet": "Welcome again, ",
+        "addPost": "Add new post",
+        "showMore": "Show More",
+        "update": "Update"
+    },
+    "settings": {
+        "logout": "Logout"
+    },
+    "form": {
+        "email": "Email ..."
+    }
+}

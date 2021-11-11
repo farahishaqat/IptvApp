@@ -1,0 +1,21 @@
+{
+    "general": {
+        "language": "English"
+    },
+    "login": {
+        "loginTitle": "تسجيل الدخول",
+        "forgetPassword": "هل نسيت الرمز السري ؟"
+    },
+    "home": {
+        "greet": "أهلا بك,",
+        "addPost": "إضافة منشور جديد",
+        "showMore": "مشاهدة المزيد",
+        "update": "تعديل"
+    },
+    "settings": {
+        "logout": "تسجيل الخروج"
+    },
+    "form": {
+        "email": "البريد الاكتروني ..."
+    }
+}
